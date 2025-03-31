@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information - ShareSpace</title>
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/user-info.css">
+  <script defer src="scripts/user-info.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="company">
+      <a href="index.html" class="company-name">ShareSpace</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="user-info.html" class="btn">User Info</a></li> <!-- Link to User Info Page -->
+    </ul>
+  </nav>
+
+  <!-- User Info Section -->
+  <section class="user-info">
+    <h2>User Information</h2>
+    <form id="user-info-form">
+      <!-- Basic Information -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="sex">Sex</label>
+        <select id="sex" name="sex" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+      </div>
+      <div class="form-group">
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality" required>
+      </div>
+
+      <!-- Housing Preferences -->
+      <div class="form-group">
+        <label for="price-range">Price Range</label>
+        <input type="text" id="price-range" name="price-range" required>
+      </div>
+      <div class="form-group">
+        <label for="desired-location">Desired Location</label>
+        <input type="text" id="desired-location" name="desired-location" required>
+      </div>
+      <div class="form-group">
+        <label for="rent-duration">Rent Duration</label>
+        <input type="text" id="rent-duration" name="rent-duration" required>
+      </div>
+      <div class="form-group">
+        <label for="property-type">Property Type</label>
+        <input type="text" id="property-type" name="property-type" required>
+      </div>
+      <div class="form-group">
+        <label for="num-people-sharing">Number of People Sharing</label>
+        <input type="number" id="num-people-sharing" name="num-people-sharing" required>
+      </div>
+
+      <!-- Photos -->
+      <div class="form-group">
+        <label for="photo1">Photo 1</label>
+        <input type="file" id="photo1" name="photo1" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label for="photo2">Photo 2</label>
+        <input type="file" id="photo2" name="photo2" accept="image/*" required>
+      </div>
+      <div class="form-group">
+        <label for="photo3">Photo 3</label>
+        <input type="file" id="photo3" name="photo3" accept="image/*" required>
+      </div>
+
+      <!-- Lifestyle Habits -->
+      <div class="form-group">
+        <label for="avg-time-at-home">집에 있는 평균 시간 (잠만 자는 곳인지, 주말에 나가는지)</label>
+        <textarea id="avg-time-at-home" name="avg-time-at-home" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="friends-over">친구 자주 데려오는 편인지?</label>
+        <textarea id="friends-over" name="friends-over" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="cooking-at-home">밥을 집에서 자주 해먹는 편인지?</label>
+        <textarea id="cooking-at-home" name="cooking-at-home" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="smoking-habit">Smoking Habit</label>
+        <select id="smoking-habit" name="smoking-habit" required>
+          <option value="non-smoker">Non-smoker</option>
+          <option value="smoker">Smoker</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="pet">Pet 유무</label>
+        <select id="pet" name="pet" required>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <!-- Save Button -->
+      <div class="form-group">
+        <button type="submit" class="btn">Save</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+</html>

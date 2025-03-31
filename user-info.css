@@ -1,0 +1,62 @@
+/* User Info Section */
+.user-info {
+  padding: 50px 20px;
+  background-color: white;
+  margin-top: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left for form labels */
+}
+
+.user-info h2 {
+  text-align: center; /* Center the heading */
+  color: #543310;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #543310;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #543310;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  height: 100px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #543310;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-group button:hover {
+  background-color: #74512D;
+}

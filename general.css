@@ -1,0 +1,52 @@
+/* Smooth Scrolling Effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif; /* Sets the default font */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  background-color: #F8F4E1; /* Soft creamy beige background */
+  text-align: center; /* Centers text */
+  color: #543310; /* Deep chocolate text */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items in the center */
+  background-color: #AF8F6F; /* Soft brown */
+  padding: 15px 30px; /* Adds padding for spacing */
+  position: fixed; /* Fixes navbar at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Sticks to the top */
+  z-index: 1000;
+}
+
+.company {
+  color: white; /* White text for contrast */
+  font-size: 24px; /* Increases font size */
+  font-weight: bold; /* Makes text bold */
+}
+
+.company-name {
+  text-decoration: none;
+  color: white;
+} 
+
+.nav-links {
+  list-style: none; /* Removes default list styling */
+  display: flex; /* Arranges links horizontally */
+  align-items: center;
+  gap: 20px; /* Spaces out links */
+  margin-right: 50px; /* Adds spacing to the right */
+}
+
+.nav-links a {
+  text-decoration: none; /* Removes underline from links */
+  color: white; /* White text */
+  font-size: 18px; /* Sets font size */
+}
